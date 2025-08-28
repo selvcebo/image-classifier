@@ -1,3 +1,101 @@
+---
+# ENGLISH
+
+# 🧠 Digit Classifier with CNN
+Project implementing a convolutional neural network (CNN) in TensorFlow/Keras to classify digit images (scikit-learn's load_digits dataset) and recognize hand-drawn digits from external images.
+![Handwritten digits](./digitosescritos.png)
+
+## 📌 Features
+- Training on the load_digits dataset (8×8 px, grayscale).
+- Preprocessing of external images:
+    - Reading and normalization to scale 0–16.
+    - Centered square cropping.
+    - Rescaling to 8×8 px.
+- Evaluation with metrics: Accuracy, Precision, Recall, F1-score, and Confusion Matrix.
+- Visualization of each stage for interpretability.
+- Batch classification of multiple files, showing predictions in console and graphically.
+
+## 📂 File Structure
+```
+│-- main.py              # Main script with training, evaluation, and functions
+│-- digito*.jpg          # Test images
+│-- requirements.txt     # Dependencies
+│-- README.md            # This document
+```
+## 🛠 Requirements
+- Python 3.8+
+- TensorFlow
+- scikit-learn
+- numpy
+- matplotlib
+- seaborn
+- Pillow
+- scikit-image
+
+Install dependencies:
+
+bash
+```
+pip install -r requirements.txt
+```
+
+## 🚀 Usage
+Clone the repository and enter the project folder:
+
+bash
+```
+git clone git@github.com:selvcebo/image-classifier.git
+
+```
+Place your .jpg images in the project folder.
+
+Run:
+
+bash
+```
+python main.py
+```
+## The script:
+- Trains the model using layers.
+- Shows metrics and confusion matrix.
+- Processes your external images and predicts their digits.
+
+![Layers](./capasia.png)
+
+## 🧩 External Classification Pipeline
+- leer_digito(): Converts image to grayscale (0–16) and binarizes (<=7 → 0, >7 → 16).
+- recortar_cuadrado(): Crops the centered digit based on pixels > 0.
+- reescalar_8x8(): Reduces to 8×8 px keeping the 0–16 scale.
+- predecir_digito(): Adjusts the image to shape (1, 8, 8, 1) and returns the most probable digit.
+
+## 📊 Example Output
+```
+Accuracy: 0.987
+Precision: 0.987
+Recall: 0.987
+F1: 0.987
+
+Predictions for loaded images:
+digito_felipe.jpg: 3
+digito_laura.jpg: 8
+...
+```
+(Also includes step-by-step visualizations and confusion matrix.)
+
+## 💡 Notes
+You can save and load the model with model.save() and load_model() to avoid retraining each time.
+
+Avoid using images that are too small or noisy: cropping and binarization work best with clear contrast.
+
+Adjust epochs and batch_size according to the performance you want.
+
+## 📜 License
+Distributed under the MIT license. If you reuse this code, give it a star ⭐ on GitHub.
+
+
+---
+# ESPAÑOL
+
 # 🧠 Clasificador de Dígitos con CNN
 Proyecto que implementa una red neuronal convolucional (CNN) en TensorFlow/Keras para clasificar imágenes de dígitos (dataset load_digits de scikit-learn) y reconocer dígitos dibujados a mano a partir de imágenes externas.
 ![Digitos escritos a mano](./digitosescritos.png)
@@ -89,6 +187,8 @@ Ajusta epochs y batch_size según el rendimiento que busques.
 
 ## 📜 Licencia
 Distribuido bajo licencia MIT. Si reutilizas este código, dale una estrella ⭐ en GitHub.
+
+
 
 ---
 
