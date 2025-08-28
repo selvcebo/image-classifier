@@ -1,5 +1,6 @@
 # 🧠 Clasificador de Dígitos con CNN
 Proyecto que implementa una red neuronal convolucional (CNN) en TensorFlow/Keras para clasificar imágenes de dígitos (dataset load_digits de scikit-learn) y reconocer dígitos dibujados a mano a partir de imágenes externas.
+![Digitos escritos a mano](./digitosescritos.png)
 
 
 ## 📌 Características
@@ -53,9 +54,11 @@ bash
 python main.py
 ```
 ## El script:
-- Entrena el modelo.
+- Entrena el modelo mediante capas.
 - Muestra métricas y matriz de confusión.
 - Procesa tus imágenes externas y predice sus dígitos.
+
+![Capas](./capasia.png)
 
 ## 🧩 Pipeline de Clasificación Externa
 - leer_digito() Convierte imagen a escala de grises (0–16) y binariza (<=7 → 0, >7 → 16).
