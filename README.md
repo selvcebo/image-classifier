@@ -3,6 +3,7 @@
 
 # 🧠 Digit Classifier with CNN
 Project implementing a convolutional neural network (CNN) in TensorFlow/Keras to classify digit images (scikit-learn's load_digits dataset) and recognize hand-drawn digits from external images.
+
 ![Handwritten digits](./digitosescritos.png)
 
 ## 📌 Features
@@ -98,6 +99,7 @@ Distributed under the MIT license. If you reuse this code, give it a star ⭐ on
 
 # 🧠 Clasificador de Dígitos con CNN
 Proyecto que implementa una red neuronal convolucional (CNN) en TensorFlow/Keras para clasificar imágenes de dígitos (dataset load_digits de scikit-learn) y reconocer dígitos dibujados a mano a partir de imágenes externas.
+
 ![Digitos escritos a mano](./digitosescritos.png)
 
 
