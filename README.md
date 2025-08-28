@@ -93,6 +93,10 @@ Adjust epochs and batch_size according to the performance you want.
 ## 📜 License
 Distributed under the MIT license. If you reuse this code, give it a star ⭐ on GitHub.
 
+---
+
+## ✨ Author
+Sergio Esteban León Valencia | Fullstack Developer | AI & Machine Learning Enthusiast
 
 ---
 # ESPAÑOL
